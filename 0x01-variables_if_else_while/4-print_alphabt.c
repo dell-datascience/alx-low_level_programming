@@ -11,9 +11,9 @@ int main(void)
 
 	for (i = 97; i <= 122; i++)
 		if (i == 113)
-			break
+			break;
 		else if (i == 101)
-			break
+			break;
 		putchar(i);
 	putchar('\n');
 	return (0);
