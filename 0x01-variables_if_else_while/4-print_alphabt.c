@@ -10,8 +10,11 @@ int main(void)
 	int i;
 
 	for (i = 97; i <= 122; i++)
-		if (i != 133 || i != 101)
-			putchar(i);
+		if (i == 113)
+			break
+		else if (i == 101)
+			break
+		putchar(i);
 	putchar('\n');
 	return (0);
 }
