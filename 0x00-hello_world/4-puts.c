@@ -2,9 +2,10 @@
 
 int main(void)
 
-/*
- * This function puts out a sring
- * And returns  0
+/**
+ * main - Etry point
+ *
+ * return: Always 0 (Success)
 */
 
 {
