@@ -9,11 +9,11 @@ int main(void)
 {
 	char a;
 
-	long int b;
+	int b;
 
 	long long int c;
 
-	char d;
+	long long int  d;
 
 	float e;
 
