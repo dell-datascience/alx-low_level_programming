@@ -22,11 +22,12 @@ int main(void)
 				putchar(j + '0');
 				putchar(' ');
 }
-			for (k = j + 1; k <= 9; k++)
+			for (k = 0; k <= 9; k++)
 {
 				putchar(k + '0');
-
-				if (i != 7 || j != 8 || k != 9)
+				for (l = k + 1; l <= 9; l++)
+					putchar(l + '0');
+				if (k != 9 || l != 9)
 {
 					putchar(',');
 					putchar(' ');
