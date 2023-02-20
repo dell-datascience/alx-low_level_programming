@@ -9,8 +9,8 @@
  */
 int main(void)
 {
-	char message1 = "and that piece iof art is useful\"";
-	char message2 = "- Dora Korpar, 2015-10-19'\n";
+	char message1[] = "and that piece iof art is useful\"";
+	char message2[] = "- Dora Korpar, 2015-10-19'\n";
 	char message[80];
 
 	strcpy(message, message1);
