@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
  * main - writse to standard output without printf or puts
