@@ -12,5 +12,6 @@ int main(void)
 	char message[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
 	write(STDOUT_FILENO, message, sizeof(message));
+	write(STDOUT_FILENO, "\n", sizeof("\n"));
 	return (1);
 }
