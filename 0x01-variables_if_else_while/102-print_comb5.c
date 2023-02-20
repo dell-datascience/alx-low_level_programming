@@ -25,8 +25,8 @@ int main(void)
 			for (k = 0; k <= 9; k++)
 {
 				putchar(k + '0');
-				for (l = k + 1; l <= 9; l++)
-					putchar(l + '0');
+			for (l = k + 1; l <= 9; l++)
+				putchar(l + '0');
 				if (k != 9 || l != 9)
 {
 					putchar(',');
