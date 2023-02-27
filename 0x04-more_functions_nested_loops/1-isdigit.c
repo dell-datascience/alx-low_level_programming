@@ -2,17 +2,17 @@
 #include <ctype.h>
 
 /*
- * _isupper : checks for uppercase character
+ * _isdigit : checks for a digit
  *
  * @c: character to be checked
  *
  * Return: (1) if c is lower, (0) otherwise
  */
-int _isupper(int c)
+int _isdigit(int c)
 {
 	int result;
 
-	result =  isupper(c);
+	result =  isdigit(c);
 	if (result != 0)
 	return (1);
 	else
