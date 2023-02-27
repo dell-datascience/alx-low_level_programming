@@ -1,7 +1,7 @@
 #include <ctype.h>
 #include "main.h"
 
-/*
+/**
  * mul - multipies two integers
  *
  * @a: parameter one
