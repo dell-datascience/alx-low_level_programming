@@ -4,7 +4,7 @@
 /**
  * main - prints sum  of multiples of 3 or 5
  *
- * Return : Success (0)
+ * Return:  (0)
  */
 int main(void)
 {
