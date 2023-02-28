@@ -19,7 +19,7 @@ int main(void)
 	fib = 0;
 	sum = lag;
 	for (i = 3; i < 4000000; i++)
-	{	
+	{
 		fib = lead + lag;
 		lead = lag;
 		lag = fib;
