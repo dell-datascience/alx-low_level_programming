@@ -17,7 +17,7 @@ int main(void)
 
 	printf("%lu, %lu", lead, lag);
 
-	for (i = 3; i < 50; i++)
+	for (i = 3; i < 51; i++)
 	{
 	fib = lead + lag;
 
