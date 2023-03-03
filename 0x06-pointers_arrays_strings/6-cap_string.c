@@ -12,7 +12,7 @@ char *cap_string(char *s)
 {
 	int i;
 	int j;
-	char delim[] = " \t\n,;.!?\"(){}";
+	char delim[] = "\t\n,;.!?\"(){}";
 
 	j = strlen(s - 1);
 
