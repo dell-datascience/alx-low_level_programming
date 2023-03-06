@@ -6,6 +6,7 @@
  *
  * i@s: string parameter one to receive
  * @accept: bytes to accept
+ *
  * Return: char
  */
 
