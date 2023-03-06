@@ -7,27 +7,30 @@
  * @accept: bytes to check
  * Return: unsigned int
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int cont = 0;
-	int j = 0;
-	int flag;
+	unsigned int k;
+	int i;
+	int j;
+	int l;
 
-	while (*s != '\0')
+	k = 0;
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		flag = 0;
-		while (*(accept + j) != '\0')
+		l = 0;
+
+		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			if (*s == *(accept + j))
-				flag = 1;
-			j += 1;
+			if (*(s + i) == *(accept + j))
+			{
+				k += 1;
+				l += 1;
+			}
 		}
-		j = 0;
-		if (flag == 0)
+		if (l == 0)
+		{
 			break;
-		cont += 1;
-		s++;
+		}
 	}
-	return (cont);
+	return (k);
 }
