@@ -6,6 +6,7 @@
  * @dest: destination parameter
  * @src: source parameter
  * @n: integer parameter
+ *
  * Return: destination parameter
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -16,7 +17,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	len = strlen(dest);
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	for (i = 0; i < n; i++)
 	{
 		dest[len + i] = src[i];
 	}
