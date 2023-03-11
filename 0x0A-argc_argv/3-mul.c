@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 	int product;
 	int i;
-	
+
 	product = 1;
 
 	if (argc != 3)
