@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	if (argc < 3)
 	{
 		printf("%d\n", 0);
-
+		return (0);
 	}
 
 	if (argc > 2)
@@ -38,5 +38,5 @@ int main(int argc, char *argv[])
 	printf("%d\n", sum);
 	}
 
-	return (0);
+	return (sum);
 }
