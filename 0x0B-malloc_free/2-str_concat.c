@@ -36,10 +36,10 @@ char *str_concat(char *s1, char *s2)
 	int j;
 
 	if (s1 == NULL)
-		*s1 = "";
+		s1 = "";
 
 	if (s2 == NULL)
-		*s2 = "";
+		s2 = "";
 
 	array = malloc(sizeof(char) * _strlen(s1) + sizeof(char) * _strlen(s2));
 
