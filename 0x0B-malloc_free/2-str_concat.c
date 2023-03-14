@@ -32,7 +32,6 @@ int _strlen(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	char *array;
-	char h;
 	int i;
 	int j;
 	char empty[1];
