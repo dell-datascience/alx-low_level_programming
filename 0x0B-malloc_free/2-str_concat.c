@@ -34,7 +34,6 @@ char *str_concat(char *s1, char *s2)
 	char *array;
 	int i;
 	int j;
-	char h;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -42,8 +41,7 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	array = malloc(sizeof(char) * _strlen(s1) + sizeof(char) * _strlen(s2));
-	array += malloc(sizeof(h));
+	array = malloc(sizeof(char) * _strlen(s1) + sizeof(char) * _strlen(s2) + 1);
 
 	if (array == NULL)
 	{
