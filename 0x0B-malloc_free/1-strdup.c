@@ -20,22 +20,22 @@ char *_strdup(char *str)
 
 	array = malloc(sizeof(char) * j);
 
-	if (str == NULL)
+	if (!str)
 	{
-	return (NULL);
+		return (NULL);
 	}
 
 	if (array == NULL)
 	{
-	return (NULL);
+		return (NULL);
 	}
 
 	i = 0;
 
 	while (*(str + i) != '\0')
 	{
-	*(array + i) = *(str + i);
-	i++;
+		*(array + i) = *(str + i);
+		i++;
 	}
 	return (array);
 
