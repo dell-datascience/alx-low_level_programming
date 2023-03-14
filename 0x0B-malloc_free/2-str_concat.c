@@ -8,7 +8,7 @@
  *
  * Return: integer of string length
  */
-int _strlen(s)
+int _strlen(char *s)
 {
 	int lenght;
 
@@ -40,12 +40,11 @@ char *str_concat(char *s1, char *s2)
 	empty[0] = '\0';
 
 	if (s1 == NULL)
-		*s1 = empty[0]
+		*s1 = empty[0];
 
 	if (s2 == NULL)
-		*s2 = empty[0]
-	
-	
+		*s2 = empty[0];
+
 	array = malloc(sizeof(char) * _strlen(s1) + sizeof(char) * _strlen(s2));
 
 	if (array == NULL)
