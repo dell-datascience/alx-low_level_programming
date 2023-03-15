@@ -59,6 +59,5 @@ char *argstostr(int ac, char **av)
 		}
 		*(result++) = '\n';
 	}
-	*(result - 1) = '\0';
 	return (result - total_size - ac);
 }
