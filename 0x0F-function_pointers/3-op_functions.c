@@ -68,6 +68,6 @@ int op_mod(int a, int b)
 	{
 	return (a % b);
 	}
-	printf("Errorop\n");
+	printf("Error\n");
 	exit(100);
 }
