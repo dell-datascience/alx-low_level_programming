@@ -14,18 +14,14 @@ int sum_them_all(const unsigned int n, ...)
 
 	sum = 0;
 	if (n == 0)
-	{
-		
 		return (0);
-	}
 
 	va_start(array, n);
 
 	for (i = 0; i < n; i++)
 		sum += va_arg(array, int);
 
-	va_end(array)
+	va_end(array);
 	return (sum);
 	
 }
-
