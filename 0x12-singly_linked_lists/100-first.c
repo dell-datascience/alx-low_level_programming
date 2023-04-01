@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void first(void) __attribute__ ((constructor));
+void constructor(void) __attribute__ ((constructor));
 
 /**
  * constructor - execute the function before the main function
