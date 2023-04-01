@@ -27,7 +27,5 @@ list_t *add_node_end(list_t **head, const char *str);
 
 void free_list(list_t *head);
 
-int _strlen_recursion(char *s);
-
 int _strlen_recursion(const char *s);
 #endif
