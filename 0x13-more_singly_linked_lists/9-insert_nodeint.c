@@ -8,7 +8,7 @@
  * @idx: index to insert node
  * @n: value of node
  *
- * Return: returns the sum of all the data (n) of a listint_t linked list.
+ * Return: the address of the new node, or NULL if it failed
 */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -18,32 +18,30 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	i = 0;
 
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
+		return (NULL);
+	new->n = n;
 	if (*head == NULL && idx != 0)
 		return (NULL);
 	if (idx != 0)
+	{
 		holder = *head;
 
-	while (i < idx - 1 && holder != NULL)
-	{
-		holder = holder->next;
-		i++;
-	}
+		while (i <  idx - 1 && holder != NULL)
+		{
+			holder = holder->next;
+			i++;
+		}
+		new->next = holder->next;
+		holder->next = new;
 
-	new = malloc(sizeof(listint_t));
-	if (new == NULL)
-	{
-		free(new);
-		return (NULL);
-	}
-	new->n = n;
 	if (idx == 0)
 	{
 		new->next =  *head;
 		*head = new;
 		return (new);
 	}
-	new->next = holder->next;
-	holder->next = new;
 
 	return (new);
 }
